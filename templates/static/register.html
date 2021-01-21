@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="notification is-danger">
+        {{ messages[0] }}. Go to <a href="{{ url_for('index.index') }}">login page</a>.
+    </div>
+{% endif %}
+{% endwith %}
+
+<div class="col-sm-12 my-auto">
+    <div class="card card-block w-25 mx-auto">        
+        <h1 class="pb-4">Create an Account</h1>
+        <form autocomplete="off" method=POST action="{{ url_for('index.register') }}">
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <p class="text-center">By creating an account, you agree to our<br><a href="#"><u>Terms of Service</u></a> and have read and understood the <a href="#"><u>Privacy Policy</u></a></p>
+            <button type="submit" class="mt-4 btn btn-primary btn-block">Create Account</button>
+        </form>
+    </div>
+</div>
+
+<footer class="fixed-bottom text-center">
+    <a href="{{ url_for('index.index') }}">Log in to Practical</a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+    <a href="#">What is PractiCal?</a>
+</footer>
+{% endblock %}
+

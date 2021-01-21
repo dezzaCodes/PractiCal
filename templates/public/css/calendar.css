@@ -1,0 +1,353 @@
+/**** Global styling ****/
+html, body {
+    height: 100%;
+}
+
+/* td, tr, th  */
+.searchTable td, 
+.searchTable tr, 
+.searchTable th {
+    border: 1px #DADCE0 solid !important;
+    padding: 5px 10px 5px 10px;
+}
+
+.searchTable th {
+    margin-left: 5px;
+}
+
+.notification.is-danger {
+    position: relative;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    color: #222328;
+    background-color: #ffffff !important;
+}
+
+a {
+    color: #222328 !important;
+    text-decoration: none !important;
+}
+
+h1 {
+	font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+	font-weight: 500;
+    font-size: 17px;
+}
+
+/**** Calendar styling overrides ****/
+
+.App {
+    text-align: center;
+    width: 80.1%;
+}
+  
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+  
+.App-title {
+    font-size: 1.5em;
+}
+  
+.App-intro {
+    font-size: large;
+}
+
+.nav {
+    border-bottom: 1px #DADCE0 solid;
+    background-color: #ffffff !important;
+}
+
+.MuiMenu-paper {
+    border: 1px solid #F2F3F4;
+}
+
+.MuiListItemIcon-root, .Sidebar-check-148 {
+    min-width: 0px !important;
+}
+  
+.calenderContainer {
+    margin-top: 10vh;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Day text **/
+.rbc-header {
+    overflow: visible !important;
+    color: #7A7B7E;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    border-bottom: none !important;
+    padding: 10px 3px 0 3px !important;
+    font-size: 80% !important;
+}
+
+/** Date cells **/
+.rbc-date-cell {
+    color: #4E4F53;
+    font-weight: 500 !important;
+    text-align: center !important;
+    padding: 8px 0px 4px 0px !important;
+    font-size: 90%;
+}
+
+/** Off range background date heading **/
+.rbc-off-range-bg {
+    background: transparent !important;
+}
+
+.rbc-off-range a {
+    color: #999999 !important;
+}
+
+/** Month view layout **/
+.rbc-month-view {
+    color: #DADCE0 !important;
+}
+
+/** Inner border of month **/
+.rbc-day-bg + .rbc-day-bg {
+    border-left: 1px solid #DADCE0 !important;
+}
+.rbc-time-header.rbc-overflowing {
+    border-right: none !important;
+}
+
+/** Current day **/
+.rbc-now a {
+    height: 50px;
+    width: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 50%;
+    border: 6px solid #566EE9;
+    background-color: #566EE9;
+    color: white !important;
+    text-align: center;
+}
+.rbc-today {
+    background-color: transparent !important;
+}
+
+.rbc-today span {
+    color: #566EE9 !important;
+}
+
+.prevNext {
+    cursor: pointer;
+    margin-bottom: 0 !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rbc-toolbar-label {
+    text-align: left !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.todayButton {
+    font-size: 14px;
+    border: 1px solid #DADCE0;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+}
+
+.rbc-btn-group {
+    font-size: 14px;
+    box-shadow: none !important;
+    margin-right: 10px;
+}
+
+.rbc-toolbar button {
+    border: 1px solid #DADCE0;
+}
+
+/** Current time indicator **/
+.rbc-current-time-indicator {
+    height: 2px !important;
+    background-color: #EC3E3D !important;
+}
+
+.rbc-day-slot .rbc-event{
+    border: 0px !important
+}
+
+tr {
+    background-color: transparent !important;
+}
+
+/** Event padding **/
+.rbc-row-segment {
+    padding: 0 5px 3px 5px !important;
+}
+
+/** Remove 30min lines **/
+.rbc-timeslot-group {
+    flex-flow: nowrap !important;
+}
+
+.MuiAppBar-colorPrimary {
+	border-bottom: 1px #DADCE0 solid;
+}
+
+/**** Bootstrap screen styling ****/
+.form-control {
+	border: none;
+	border-bottom: 1px #222328 solid;
+	border-radius: 0;
+	padding: .375rem .4rem;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+.MuiPaper-elevation8 {
+    box-shadow: none !important;
+}
+
+.container {
+    height: 100%;
+}
+
+.note {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    background: #eee;
+    max-width: 360px;
+}
+
+.card {
+    border: 0px !important;
+    box-shadow: none !important;
+}
+
+.navbar-brand {
+    padding-top: 25px !important;
+    padding-left: 25px !important;
+}
+
+footer {
+    position: fixed;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 0.4;
+}
+
+.btn-block {
+    padding: 10px 0; 
+    background-color: #566EE9;
+    font-weight: bold;
+}
+
+.btn-block:hover {
+    background-color: #566EE9;
+}
+
+.form-control:focus {
+    background-color: #F7F7F7;
+    border-bottom: 0px !important;
+    color: #222328;
+    border-radius: 6px;
+}
+
+/**** Time breakdowns ****/
+div.inline { 
+    float:left; 
+}
+
+.tiles {
+    width: 150px;
+    height: 175px;
+    border-radius: 10px;
+    margin: 10px 10px 40px 10px;
+    text-align: center;
+    color: white;
+    padding: 0px 11px 0px 11px;
+}
+
+.timeNum {
+    font-weight: 500;
+    padding-top: 40px;
+    margin-bottom: 2px;
+    font-size: 40px;
+}
+
+.timeNum span {
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.timeType {
+    font-size: 14px;
+}
+
+.social { background-color: #D53964; }
+.work { background-color: #F6C245; }
+.school { background-color: #99C05D; }
+.family { background-color: #4897EC; }
+.misc { background-color: #8E37AA; }
+
+/**** Contact List ****/
+.Navbar-contactList-23 {
+    border: 1px solid #DADCE0;
+}
+
+/**** Colour Picker ****/
+.Sidebar-colourPicker-156 {
+    width: 380px !important;
+    box-shadow: 6px inset !important;
+}
+
+.Sidebar-colourPicker-156 > div {
+    box-shadow: 6px inset !important;
+}
+
+/**** Notifications ****/
+.notifEventBlock {
+    background-color: #566EE9;
+    padding: 15px 15px 15px 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    line-height: 8px;
+    float: left;
+    clear: left;
+}
+
+.notifTitle {
+    font-weight: bold;
+}
+
+.going {
+    color: white !important;
+}
+
+.goingQuestion {
+    padding-top: 30px;
+}
